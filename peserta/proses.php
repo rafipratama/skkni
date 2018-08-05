@@ -13,8 +13,9 @@
 	  $tanggal_terbit_sertifikat    = date("Y-m-d",strtotime($_POST['tanggal_terbit_sertifikat']));
 	  $tanggal_lahir    = date("Y-m-d",strtotime($_POST['tanggal_lahir']));
 	  $organisasi          	= $_POST['organisasi'];
-	  mysqli_query($koneksi,"INSERT INTO data_peserta (nama,nik,hp,email,skema_sertifikasi,tempat_uji_kompetensi,rekomendasi,tanggal_terbit_sertifikat,tanggal_lahir,organisasi) 
-	  VALUES ('$nama','$nik','$hp','$email','$skema_sertifikasi','$tempat_uji_kompetensi','$rekomendasi','$tanggal_terbit_sertifikat','$tanggal_lahir','$organisasi')");
+	$alamat          	= $_POST['alamat'];
+	  mysqli_query($koneksi,"INSERT INTO data_peserta (nama,nik,hp,email,skema_sertifikasi,tempat_uji_kompetensi,rekomendasi,tanggal_terbit_sertifikat,tanggal_lahir,organisasi,alamat) 
+	  VALUES ('$nama','$nik','$hp','$email','$skema_sertifikasi','$tempat_uji_kompetensi','$rekomendasi','$tanggal_terbit_sertifikat','$tanggal_lahir','$organisasi','$alamat')");
 
 	  header('location:peserta.php?&ms=1');
 	}

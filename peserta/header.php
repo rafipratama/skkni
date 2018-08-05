@@ -52,15 +52,15 @@
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	  <ul class="nav navbar-nav">
 			<li><a href="peserta.php">Data Peserta<span class="label label-danger pull-right"></span></a></li>
-			<li><a href="cetak_peserta.php">Cetak Data Peserta<span class="label label-danger pull-right"></span></a></li>
-		  </ul>
-		<ul class="nav navbar-nav navbar-right">
-	   	<li>
-			<form class="navbar-form navbar-left" role="cari">
-				<div class="form-group">
-				<input type="text" class="form-control" placeholder="Search Google">
-			</div>
-			<a href="http://www.google.com" class="btn btn-default">Cari</a>
+			<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Cetak Laporan <span class="caret"></span></a>
+		  	<ul class="dropdown-menu" role="menu">
+			<li><a href="cetak_peserta.php">Cetak Peserta Programmer Madya<span class="label label-danger pull-right"></span></a></li>
+			<li><a href="cetak_network_madya.php">Cetak Peserta Network Madya<span class="label label-danger pull-right"></span></a></li>
+			<li><a href="cetak_desain_madya.php">Cetak Peserta Desain Madya<span class="label label-danger pull-right"></span></a></li>
+		  	</ul>
+		</li>
+		
 	  </form>
 
 	

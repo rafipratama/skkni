@@ -18,7 +18,7 @@
             <?php 
                 include ('koneksi.php');
 
-                $tampil = mysqli_query($koneksi,"SELECT * FROM data_peserta where skema_sertifikasi='programmer madya'");
+                $tampil = mysqli_query($koneksi,"SELECT * FROM data_peserta where skema_sertifikasi='Desain madya'");
                 $no = 1;
                 while ($d = mysqli_fetch_array($tampil))
                 {

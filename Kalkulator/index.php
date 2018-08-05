@@ -12,19 +12,20 @@
 	if(isset($_POST['hitung'])){
 		$bil1 = $_POST['bil1'];
 		$bil2 = $_POST['bil2'];
+		$bil3 = $_POST['bil3'];
 		$operasi = $_POST['operasi'];
 		switch ($operasi) {
 			case 'tambah':
-				$hasil = $bil1+$bil2;
+				$hasil = $bil1+$bil2+$bil3;
 			break;
 			case 'kurang':
-				$hasil = $bil1-$bil2;
+				$hasil = $bil1-$bil2-$bil3;
 			break;
 			case 'kali':
-				$hasil = $bil1*$bil2;
+				$hasil = $bil1*$bil2*$bil3;
 			break;
 			case 'bagi':
-				$hasil = $bil1/$bil2;
+				$hasil = $bil1/$bil2/$bil3;
 			break;			
 		}
 	}
@@ -90,6 +91,7 @@
 		<form method="post" action="index.php">			
 			<input type="text" name="bil1" class="bil" autocomplete="off" placeholder="Masukkan Bilangan Pertama" onkeypress="return hanyaAngka(event)">
 			<input type="text" name="bil2" class="bil" autocomplete="off" placeholder="Masukkan Bilangan Kedua" onkeypress="return hanyaAngka(event)">
+			<input type="text" name="bil3" class="bil" autocomplete="off" placeholder="Masukkan Bilangan Ketiga" onkeypress="return hanyaAngka(event)">
 			<select class="opt" name="operasi">
 				<option value="tambah">+ (Penjumlahan)</option>
 				<option value="kurang">- (Pengurangan)</option>

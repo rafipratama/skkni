@@ -145,6 +145,11 @@
 							<input type="text" name="organisasi" id="organisasi" class="form-control" placeholder="Organisasi" required=""/>
 						</div>
 
+						<div class="form-group">
+							<label>Alamat</label> <br>
+							<input type="text" name="alamat" id="alamat" class="form-control" placeholder="Alamat" required=""/>
+						</div>
+
 				  </div> <!-- col -->  
 				  </div> <!-- end row -->
 

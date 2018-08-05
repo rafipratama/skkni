@@ -40,6 +40,7 @@
 				<th align="center">Tanggal Terbit Sertifikat</th>
 				<th align="center">Tanggal Lahir</th>
 				<th align="center">Organisasi</th>
+				<th align="center">Alamat</th>
 				<th align="center">Aksi</th>
 			</thead>
 			 <tbody>
@@ -64,6 +65,7 @@
 						<td><?php echo $d['tanggal_terbit_sertifikat']; ?></td>
 						<td><?php echo $d['tanggal_lahir']; ?></td>
 						<td><?php echo $d['organisasi']; ?></td>
+						<td><?php echo $d['alamat']; ?></td>
 						<td>
 						 <a href="edit_peserta.php?nik=<?php echo $d['nik'];?>" class="btn btn-warning"> <span class="glyphicon glyphicon-pencil"></span></a>
 
